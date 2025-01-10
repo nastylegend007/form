@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyzXJkTF8hqXWa-DSFaXw78j4LEuircR34oNQaFUWTRiTyU15K0r7CREedXkSW7OCak/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyUMs96rezVFzCeAtCUSvZHTm7QLI1Qusn2-SSInGWMg1qrp1qk1EqlNuEXq6BVsTBy/exec'
 
 const form = document.forms['Forms trial']
 
