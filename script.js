@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzP31w80MK6vNf_TpPel2bnx1Ao8Uqe6d_XmOOzjKWEBAScY9XCi6pOMSkmjpv1qt4_/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxzsgJRSreCwT-7LzIzBsXL_wbDYXQ4cJwLV45P2uJkeDeexIfZ6WPqjJJwRWs7Mr5Q/exec';
 const form = document.getElementById('dataForm');
 
 form.addEventListener('submit', (e) => {
@@ -6,6 +6,12 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
 
     fetch(scriptURL, { method: 'POST', body: formData })
-        .then((response) => alert('Success! Your details have been submitted.'))
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(() => alert('Success! Your details have been submitted.'))
         .catch((error) => alert('Error! ' + error.message));
 });
