@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwWypRrj67dKGBrrMiIt4L0G2awFAc-KFeUe6duxU_54Uc_4H8QizKLXr6gBcPkqvm4/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyzXJkTF8hqXWa-DSFaXw78j4LEuircR34oNQaFUWTRiTyU15K0r7CREedXkSW7OCak/exec';
 const form = document.getElementById('dataForm');
 
 form.addEventListener('submit', (e) => {
